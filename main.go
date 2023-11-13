@@ -1,10 +1,9 @@
 package main
 
 import (
-	"net/http"
-
 	"github.com/Zulhaditya/divetech-blog/initdb"
 	"github.com/gin-gonic/gin"
+	"net/http"
 )
 
 func main() {
