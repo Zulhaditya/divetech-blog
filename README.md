@@ -1,3 +1,2 @@
-- start a docker container:
-  -> docker run -p 8000:8000 hello_world:1.0
-- visit localhost:8000 to get response
+- start a docker container -> docker run -p 8000:8000 hello_world:1.0
+- visit -> localhost:8000 to get response
