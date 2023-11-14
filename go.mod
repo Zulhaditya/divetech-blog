@@ -4,6 +4,7 @@ go 1.21.4
 
 require (
 	github.com/Zulhaditya/divetech-blog/initdb v0.0.0-20231113194616-b07bd08b08c1
+	github.com/Zulhaditya/divetech-blog/models v0.0.0-20231114131325-177ff4dc43b3
 	github.com/gin-gonic/gin v1.9.1
 )
 
