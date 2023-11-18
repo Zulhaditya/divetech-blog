@@ -8,9 +8,7 @@ Accept: application/json;
 Connection: keep-alive
 Content-Type: application/json; charset=utf-8
 
-
-# query
-
+# ============== BLOG ================
 # POST /posts/
 # {
 #   "title": "Kingslayer",
@@ -25,8 +23,23 @@ Content-Type: application/json; charset=utf-8
 
 
 # get all data
-GET /posts/ 
+# GET /posts/ 
 
 # get data by id
 # GET /posts/2
 
+# ============== USER ================
+# POST /auth/register
+# {
+#   "email": "ackxle@gmail.com",
+#   "password": "RandomPassword123",
+#   "first_name": "Ackxle",
+#   "last_name": "William"
+# }
+
+
+POST /auth/login
+{
+  "email": "ackxle@gmail.com",
+  "password": "RandomPassword123",
+}
