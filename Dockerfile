@@ -1,3 +1,19 @@
+# FROM golang:alpine
+#
+# RUN mkdir /app
+#
+# WORKDIR /app
+#
+# ADD go.mod .
+# ADD go.sum .
+#
+# RUN go mod download
+# RUN go install github.com/cosmtrek/air@latest
+#
+# ADD . .
+#
+# CMD ["air", "-c", ".air.toml"]
+
 FROM golang:alpine
 
 RUN mkdir /app
@@ -7,8 +23,10 @@ WORKDIR /app
 ADD go.mod .
 ADD go.sum .
 
+
 RUN go mod download
 RUN go get github.com/githubnemo/CompileDaemon
+RUN go install github.com/githubnemo/CompileDaemon
 
 ADD . .
 
