@@ -1,4 +1,4 @@
-module github.com/Zulhaditya/divetech-blog/initdb
+module initdb
 
 go 1.21.4
 

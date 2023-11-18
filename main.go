@@ -1,21 +1,28 @@
 package main
 
 import (
-	"github.com/Zulhaditya/divetech-blog/initdb"
-	"github.com/gin-gonic/gin"
-	"net/http"
+	"apiroutes"
+	"controller"
+	"initdb"
+	"models"
+	"repository"
+	"service"
 )
 
-func main() {
-	// initialized new gin router
-	router := gin.Default()
+func init() {
+	initdb.LoadEnv()
+}
 
-	router.GET("/", func(ctx *gin.Context) {
-		// load .env
-		initdb.LoadEnv()
-		// new database connection
-		initdb.NewDatabase()
-		ctx.JSON(http.StatusOK, gin.H{"data": "hello world!"})
-	})
-	router.Run(":8000")
+func main() {
+	router := initdb.NewGinRouter()
+	db := initdb.NewDatabase()
+	postRepository := repository.NewPostRepository(db)
+	postService := service.NewPostService(postRepository)
+	postController := controller.NewPostController(postService)
+	postRoute := routes.NewPostRoute(postController, router)
+	postRoute.Setup()
+
+	db.DB.AutoMigrate(&models.Post{})
+	router.Gin.Run(":8000")
+
 }

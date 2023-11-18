@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"github.com/Zulhaditya/divetech-blog/initdb"
-	"github.com/Zulhaditya/divetech-blog/models"
+	"initdb"
+	"models"
 )
 
 // post repository

@@ -1,0 +1,12 @@
+go 1.21.4
+
+use (
+	.
+	./api/controller
+	./api/repository
+	./api/routes
+	./api/service
+	./initdb
+	./models
+	./util
+)

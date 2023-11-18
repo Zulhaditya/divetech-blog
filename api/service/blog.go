@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/Zulhaditya/divetech-blog/api/repository"
-	"github.com/Zulhaditya/divetech-blog/models"
+	"models"
+	"repository"
 )
 
 // post service struct
