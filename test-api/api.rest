@@ -31,15 +31,15 @@ Content-Type: application/json; charset=utf-8
 # ============== USER ================
 # POST /auth/register
 # {
-#   "email": "ackxle@gmail.com",
-#   "password": "RandomPassword123",
-#   "first_name": "Ackxle",
-#   "last_name": "William"
+#   "email": "zulhaditya@gmail.com",
+#   "password": "RandomPassword321",
+#   "first_name": "Haditya",
+#   "last_name": "Smith"
 # }
 
 
 POST /auth/login
 {
   "email": "ackxle@gmail.com",
-  "password": "RandomPassword123",
+  "password": "RandomPassword123"
 }
