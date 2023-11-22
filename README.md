@@ -16,9 +16,9 @@
 
 ## Requirements
 
-- Go Installed   - version 1.21.4
-- Docker 	     - version 23.0.3
-- Docker-compose - version 3.8.0
+- Go Installed     - version 1.21.4
+- Docker 	         - version 23.0.3
+- Docker-compose   - version 3.8.0
 - Prefarrably Linux Machine
 
 ## Features
@@ -39,17 +39,18 @@ To run this project, build it using docker-compose:
 
 ```bash
 $ cd ../divetech-blog
+$ go mod tidy # to install all package/module
 $ docker-compose up --build
 ```
 
 ## Endpoint
 
 ### Blog
-- Get All Post endpoint -> /posts/
-- Get Post endpoint -> /posts/1
-- Create Post endpoint -> /posts/
-- Update Post endpoint -> /posts/2
-- Delete Post endpoint -> /posts/3
+- Get All Post endpoint -> /posts
+- Get Post endpoint -> /posts/:postId
+- Create Post endpoint -> /posts
+- Update Post endpoint -> /posts/:postId
+- Delete Post endpoint -> /posts/:postId
 
 ### User
 - Register endpoint -> /auth/register
@@ -59,7 +60,7 @@ Open [http://localhost:8000/posts](http://localhost:8000/posts) with your browse
 
 ## Project Status
 
-Project is: _on progress._ <!-- / _complete_ / _no longer being worked on_. reason ? -->
+Project is: _complete._ <!-- / _complete_ / _no longer being worked on_. reason ? -->
 
 ## Room for Improvement
 
