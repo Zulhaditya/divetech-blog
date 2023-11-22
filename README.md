@@ -35,6 +35,19 @@
 
 ## Setup
 
+### Environment Variable
+Before running the project, you can setup environment variables by creating an .env and customize according to your preference:
+```
+MYSQL_ROOT_PASSWORD=root
+DB_USER=user
+DB_PASSWORD=Password@123
+DB_HOST=db
+DB_PORT=3306
+DB_NAME=golang
+SERVER_PORT=8000
+ENVIRONMENT=local
+```
+
 To run this project, build it using docker-compose:
 
 ```bash
